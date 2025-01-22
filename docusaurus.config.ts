@@ -66,13 +66,8 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/about', label: 'About', position: 'left'},
+        {to: '/services', label: 'Services', position: 'left'},
         {to: '/careers', label: 'Careers', position: 'left'},
         {
           href: 'https://github.com/devencyeg',
@@ -88,6 +83,14 @@ const config: Config = {
         {
           title: 'Quick Links',
           items: [
+            {
+              label: 'About',
+              to: '/about',
+            },
+            {
+              label: 'Services',
+              to: '/services',
+            },
             {
               label: 'Careers',
               to: '/careers',
