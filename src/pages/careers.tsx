@@ -1,34 +1,34 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import JobBoard from '@site/src/components/JobBoard';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          Careers
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          Join Devency to innovate, grow, and make an impact in the world of software development and technology consulting.
+        </p>
       </div>
     </header>
   );
 }
 
-export default function Home(): ReactNode {
+export default function Careers(): ReactNode {
   return (
     <Layout
-      title={"Home"}
-      description="Software Development and Technology Consulting">
+      title={"Careers"}
+      description="Careers at Devency">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <JobBoard />
       </main>
     </Layout>
   );

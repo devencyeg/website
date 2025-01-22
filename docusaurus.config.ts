@@ -73,10 +73,12 @@ const config: Config = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/careers', label: 'Careers', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://github.com/devencyeg',
           position: 'right',
+          className: "header-github-link",
+          "aria-label": "GitHub"
         },
       ],
     },
@@ -84,28 +86,28 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Quick Links',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Careers',
+              to: '/careers',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Find us',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'LinkedIn',
+              href: 'https://linkedin.com/company/devencyeg',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Medium',
+              href: 'https://medium.com/devencyeg',
             },
             {
               label: 'X',
-              href: 'https://x.com/docusaurus',
+              href: 'https://x.com/devencyeg',
             },
           ],
         },
@@ -113,17 +115,13 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/devencyeg',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Devency LLC.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Devency L.L.C.`,
     },
     prism: {
       theme: prismThemes.github,
